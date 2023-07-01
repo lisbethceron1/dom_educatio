@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="/bostrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/bostrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bostrap/css/style.css">
+ 
+
+  <title>Educatio</title>
+ 
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/LogoBlanco.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor
+  * Updated: Mar 09 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+
+   <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/LogoBlanco.png">Educatio</a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a class="active" href="index.html">inicio</a></li>
+        <li><a href="about.html">nosotros</a></li>
+        <li><a href="courses.html">materias</a></li>
+        <li><a href="trainers.html">profesores</a></li>
+       
+
+        <li class="dropdown"><a href="#"><span>menu</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">ayuda </a></li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+     
+
+   
+  </div>
+  
+</header><!-- End Header -->
+<body>
+  <!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">INICIAR SESION</h5>
+        <button id="closeButton" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="abs-center">
+      <div class="container">
+          <div class="row">
+            <div class="panel panel-login">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <form id="login-form" action="http://phpoll.com/login/process" method="post" role="form" style="display: block;">
+                      <div class="form-group">
+                       <a>Correo electronico</a>
+                        <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="usuario" value="" required ><p></p>
+                      </div>
+                      <div class="form-group">
+                        <a>Contraseña</a>
+                        <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Contraseña" required >
+                      </div>
+                      <div class="form-group">
+                        <a>Rol</a>
+                        <select name="role" id="role" class="form-control form-select" required>
+                          <option value="1">Docente</option>
+                          <option value="2">Estudiante</option>
+                          <option value="3">Administrador</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="text-center">
+                              <a href="" tabindex="5" class="forgot-password">¿Has olvidado tu contraseña?</a><p></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group text-center">
+                        <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                        <label for="remember"> Recordarme</label><p></p>
+                      </div>
+                      <!-- ... Código HTML anterior ... -->
+
+<div class="form-group text-center">
+  <div id="mensaje-error" style="display: none; color: red;"></div>
+  
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+  <button type="submit" class="btn btn-primary">INGRESAR</button>
+</div>
+
+
+
+<!-- ... Código HTML posterior ... -->
+                                    
+                    </form>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+</div></a></li>
+    </div>
+ 
+
+  
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-content-center align-items-center">
+    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+      <h1><I>La Educación</I></h1>
+      <h2> Es el pasaporte hacia el futuro,el mañana pertenece a<br> aquellos que se preparan para él en el dia de hoy.</h2><BR>
+      <!-- Button trigger modal -->
+<button id=boton-iniciar-sesion type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+ iniciar sesion
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Button trigger modal -->
+
+
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img id="admin" src="assets/img/58.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3 > Bienvenidos a Educatio</h3>
+            <p id="es1"class="fst-italic">
+              ●En Colombia existe un bajo rendimiento académico en colegios y universidades ya que muchos estudiantes se quedan con vacíos en materias o no entienden temas. Uno de los problemas es que cuando requieren solicitar un profesor se les hace complejo e incluso la atención no suele ser la mejor.
+
+Nuestra aplicación es una herramienta de mediación para encontrar a profesores que se acoplan a tu disponibilidad de tiempo y recursos económicos . Esto se hace porque buscamos mejorar el bajo rendimiento académico y el desconocimiento y desconfianza de contratar un profesor particular ya que una de las razones principales es que el estudiante no pudo entender un tema o quedó inconcluso.
+
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Profesores que se adapten a tu disponibilidad de tiempo</li>
+              <li><i class="bi bi-check-circle"></i> puedes hacer pujas con el profesor o estudiante para obtener el mejor precio de la clase </li>
+              <li><i class="bi bi-check-circle"></i> puedes deidir entre varios profesores</li>
+              <li><i class="bi bi-check-circle"></i> puedes puntuar profesores y marcarlos como favoritos </li>
+            </ul>
+
+          </div>
+        </div>
+       
+       
+      </div>
+    </section><!-- End About Section -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <img src="/Mentor/assets/img/sombrero-de-graduacion.png" height="50px" >
+                    <h4>Oferta tu precio</h4>
+                    <p>¿No tienses suficiente dinero para pagar una clase personalizada?<br>
+                      oferta y contraoferta el valor de tu clase</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <img src="/Mentor/assets/img/busqueda-de-lupa.png" height="50px">
+                    <h4>Escoja</h4>
+                    <p>Selecciones su profesor perfecto según sus nececidades,experiencia,precios;<br>somos el mayor portal de profesores particulares de colombia
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <img src="/Mentor/assets/img/homa.png" height="50px">
+                    <h4>Clases cuando quieras</h4>
+                    <p>Escoge el horario y fecha que se ajuste mejor a tu dia a dia</p>
+                  </div>
+                </div>
+               
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="+1232" data-purecounter-duration="1" class="purecounter"></span>
+            <p>+estudiantes</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end= "100" data-purecounter-duration="1" class="purecounter"></span>
+            <p> + materias</p>
+          </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end= "1500" data-purecounter-duration="1" class="purecounter"></span>
+            <p> + docentes</p>
+          </div>
+
+         
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="+15" data-purecounter-duration="1" class="purecounter"></span>
+            <p>+ofertas</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Why Us Section ======= -->
+   
+
+    <!-- ======= Features Section ======= -->
+    
+    <!-- ======= Popular Courses Section ======= -->
+   
+
+
+
+
+
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Materias areas y temas</h2>
+          <p>Nuestras Materias!</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/ciencias.jpg" class="testimonial-img" alt="">
+                  <h3>clases de ciencias</h3>
+                  <h4></h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Clases de matemáticas,física,quimica,álgebra,
+biología,estadítica....Clases de matemática online,fisica online...
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/tecnologia.jpg" class="testimonial-img" alt="">
+                  <h3>clases de Informatica y Tecnologia</h3>
+                  <h4></h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Clases de sistemas, clases de programacion, clases de animacion 3D... Clase de sistemas online clases de programacion online..
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/idiomas.jpg" class="testimonial-img" alt="">
+                  <h3>Clases de idiomas</h3>
+                  <h4></h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Clases de inglés,frances,alemán,italiano,portugués,
+español...Clases de chino,árabe,japonés...Clases de inglés online,francés online...
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/etica.jpg" class="testimonial-img" alt="">
+                  <h3>Clases de etica</h3>
+                  <h4></h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    clases de valores,clases de moral,clases de valore online,clases de moral onile...
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/musica.jpg" class="testimonial-img" alt="">
+                  <h3>Clases de musica</h3>
+                  <h4></h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Clases de instrumentos,clases de notas,clases de afinacion... clases de instrumentos online,clases de notas online, clases de afinacion online...
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+
+    
+
+
+
+
+
+
+
+
+  
+
+    <!-- ======= Trainers Section ======= -->
+    <div id=titprof class="section-title">
+      <h2></h2>
+      <h3> Profesores </h3>
+      <p> Ciudades mas activas  </p>
+    </div>
+    <section id="trainers" class="trainers">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="/Mentor/assets/img/popayan.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4 id="panel1">popayan</h4>
+                <span></span>
+                <p>
+                
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img  id="myImage" src="/Mentor/assets/img/bogota.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4 id="panel2">Bogota</h4>
+                <span></span>
+                <p>
+                  
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img  id="ad2" src="assets/img/p.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4 id="panel3">Pasto</h4>
+                <span></span>
+                <p>
+                  
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Trainers Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Educatio</h3>
+            <p>
+              popayan cauca<br>
+              centro de teleinformatica y produccion industrial<br>
+               <br><br>
+              <strong>telefono:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> Educatiocol@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4></h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4></h4>
+            <ul>
+             
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4></h4>
+            <p></p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribete" ><a href="index.html"></a>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
+           <a href="https://bootstrapmade.com/"></a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
